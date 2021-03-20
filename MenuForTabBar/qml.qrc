@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ColoredImage.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="1.png">images/dir1.png</file>
+        <file alias="2.png">images/dir2.png</file>
+        <file alias="3.png">images/dir3.png</file>
+        <file alias="4.png">images/dir4.png</file>
+        <file alias="5.png">images/dir5.png</file>
+        <file alias="line.png">images/line.png</file>
+        <file alias="menu.png">images/menu.png</file>
+        <file alias="code">images/code.jpg</file>
+        <file alias="focus">images/focus.jpg</file>
+        <file alias="working">images/working.jpg</file>
+    </qresource>
+</RCC>

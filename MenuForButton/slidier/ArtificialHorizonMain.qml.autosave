@@ -1,0 +1,69 @@
+import QtQuick 2.0
+import QtQuick.Window 2.1
+
+Item {
+
+    width: 400; 
+    height: 300
+    
+    //滑块条
+    Rectangle {
+        id: container
+        property int oldWidth: 0
+        anchors {
+            bottom: parent.bottom;
+            left: parent.left
+            right: parent.right;
+            leftMargin: 20;
+            rightMargin: 20
+            bottomMargin: 10
+        }
+        height: 16
+
+        radius: height/2;
+        opacity: 0.8
+        antialiasing: true
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "gray" }
+            GradientStop { position: 1.0; color: "white" }
+        }
+
+        onWidthChanged: {
+            if (oldWidth === 0) {
+                oldWidth = width;
+                return
+            }
+
+            var desiredPercent = slider.x * 100 / (oldWidth - 32)
+            slider.x = desiredPercent * (width - 32) / 100
+            oldWidth = width
+        }
+
+        Rectangle {
+            id: slider
+            x: 1; y: 1; width: 30; height: 14
+            radius: 6
+            antialiasing: true
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "red" }
+                GradientStop { position: 1.0; color: "blue" }
+            }
+            MouseArea {
+                anchors.fill: parent
+                anchors.margins: -16 // Increase mouse area a lot outside the slider
+                drag.target: parent;
+                drag.axis: Drag.XAxis
+                drag.minimumX: 2;
+                drag.maximumX: container.width - 32
+            }
+        }
+    }
+    QuitButton {
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.margins: 10
+    }
+}
+//! [0]
+    
+}

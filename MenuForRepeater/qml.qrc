@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file alias="main.qml">main.qml</file>
+        <file>RepeaterMenu.qml</file>
+        <file alias="slider/ColorRect.qml">qml/slidier/ColorRect.qml</file>
+        <file alias="slider/SlidierMain.qml">qml/slidier/SlidierMain.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="1.png">images/dir1.png</file>
+        <file alias="2.png">images/dir2.png</file>
+        <file alias="3.png">images/dir3.png</file>
+        <file alias="4.png">images/dir4.png</file>
+        <file alias="5.png">images/dir5.png</file>
+        <file alias="code">images/code.jpg</file>
+        <file alias="focus">images/focus.jpg</file>
+        <file alias="working">images/working.jpg</file>
+    </qresource>
+</RCC>
