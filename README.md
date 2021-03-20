@@ -1,7 +1,18 @@
 # QmlLearningPro
 Qml 学习代码
 
+ParaProgressBar
+由15个平行四边形组成的进度条
+博客：xxx
 
-2021.03.20
-1、提交平行四边形不规则进度条
-2、提交4个目录例程
+
+MenuForButton 
+基于按键的目录
+MenuForListview
+基于Listview目录
+MenuForRepeater
+基于Listview目录
+MenuForTabBar
+基于TabBar的目录
+博客目录： https://blog.csdn.net/qq_16504163/article/details/109555984
+
