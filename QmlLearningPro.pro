@@ -1,6 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
+    CanvasSector \
     MenuForButton \
     MenuForListview \
     MenuForRepeater \

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>canvasSector.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="Oil.svg">images/Oil.svg</file>
+        <file alias="Oil1.svg">images/Oil1.svg</file>
+        <file alias="Oil2.svg">images/Oil2.svg</file>
+    </qresource>
+</RCC>

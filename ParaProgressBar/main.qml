@@ -38,7 +38,8 @@ Window {
             model: 15
 
             Parallelogram {
-                xs:  -0.6
+//                xs:  -0.5  //-原本0.6
+                xs:  -1  //-原本0.6
                 ys:  0.01
                 radius: 3
                 width: 28

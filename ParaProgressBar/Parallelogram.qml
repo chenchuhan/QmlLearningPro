@@ -12,6 +12,14 @@ Item {
         anchors.fill: parent
         color: "lightblue"
         // 切变矩阵
+//        transform: Matrix4x4 {
+//            matrix: Qt.matrix4x4(1, xs, 0, 0,
+//                                 ys, 1, 0, 0,
+//                                 0, 0, 1, 0,
+//                                 0, 0, 0, 1)
+
+//        }
+
         transform: Matrix4x4 {
             matrix: Qt.matrix4x4(1, xs, 0, 0,
                                  ys, 1, 0, 0,
