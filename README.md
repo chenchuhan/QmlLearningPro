@@ -1,6 +1,16 @@
 # QmlLearningPro
 Qml 学习代码
 
+
+==========================================================================
+
+时间：   2021.08.02 
+平台：   Android 、 Windows
+概要： VirtualJoystick  增加虚拟操作杆，捕获触点，在控制物体移动。
+关键控件： MultiPointTouchArea、TouchPoint、Timer
+
+博客地址：https://blog.csdn.net/qq_16504163/article/details/115030440
+
 ==========================================================================
 
 ParaProgressBar  由15个平行四边形组成的进度条
