@@ -6,4 +6,5 @@ SUBDIRS += \
     MenuForListview \
     MenuForRepeater \
     MenuForTabBar \
-    ParaProgressBar
+    ParaProgressBar \
+    VirtualJoystick

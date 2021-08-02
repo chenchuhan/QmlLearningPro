@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+        <file alias="JoystickThumbPad.qml">qml/JoystickThumbPad.qml</file>
+        <file alias="Output.qml">qml/Output.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="Down.svg">images/Down.svg</file>
+        <file alias="Left.svg">images/Left.svg</file>
+        <file alias="Up.svg">images/Up.svg</file>
+        <file alias="Right.svg">images/Right.svg</file>
+        <file alias="JoystickBezelLight.png">images/JoystickBezelLight.png</file>
+        <file alias="Cat.svg">images/Cat.svg</file>
+        <file alias="Dog.svg">images/Dog.svg</file>
+        <file alias="Dog.png">images/Dog.png</file>
+        <file alias="Cat.png">images/Cat.png</file>
+    </qresource>
+</RCC>
