@@ -10,7 +10,7 @@ Qml 学习代码
 
 关键控件： MultiPointTouchArea、TouchPoint、Timer
 
-博客地址：https://blog.csdn.net/qq_16504163/article/details/115030440
+博客地址：https://blog.csdn.net/qq_16504163/article/details/119318325
 
 ==========================================================================
 
