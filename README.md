@@ -5,6 +5,15 @@ Qml 学习代码
 
 2021.08.02  [Android] [Windows]
  
+概要： git 测试
+
+关键控件： 
+
+博客地址：
+==========================================================================
+
+2021.08.02  [Android] [Windows]
+ 
 概要： VirtualJoystick  增加虚拟操作杆，捕获触点，在控制物体移动。
 
 关键控件： MultiPointTouchArea、TouchPoint、Timer
