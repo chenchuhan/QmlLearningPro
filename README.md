@@ -3,13 +3,15 @@ Qml 学习代码
 
 ==========================================================================
 
-2021.08.02  [Android] [Windows]
+2021.10.03  [Android] [Windows]
  
-概要： git 测试
+概要：CrazyMath 
 
-关键控件： 
+关键词：疯狂数字游戏、QML C++混合编程、翻译、QSetting 
 
-博客地址：
+关键控件： column、SpringAnimation、transitions、State
+
+博客地址：https://blog.csdn.net/qq_16504163/article/details/120459571
 ==========================================================================
 
 2021.08.02  [Android] [Windows]
