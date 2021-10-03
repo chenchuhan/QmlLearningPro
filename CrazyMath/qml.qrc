@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>QmlControls/CCLabel.qml</file>
+        <file>QmlControls/qmldir</file>
+        <file>QmlControls/CCHoverHorzButton.qml</file>
+        <file>QmlControls/CCColoredImage.qml</file>
+        <file>QmlControls/CCVertRect.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="Correct.svg">Images/Correct.svg</file>
+        <file alias="Error.svg">Images/Error.svg</file>
+        <file alias="Restart.svg">Images/Restart.svg</file>
+        <file alias="Start.svg">Images/Start.svg</file>
+        <file alias="Clock.svg">Images/Clock.svg</file>
+    </qresource>
+    <qresource prefix="/translations">
+        <file alias="zh_CN.qm">Translations/zh_CN.qm</file>
+        <file alias="zh_CN.ts">Translations/zh_CN.ts</file>
+    </qresource>
+</RCC>

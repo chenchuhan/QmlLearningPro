@@ -1,0 +1,10 @@
+Module QmlControls
+
+#Basic
+CCLabel                         1.0 CCLabel.qml
+CCColoredImage                  1.0 CCColoredImage.qml
+
+CCHoverHorzButton               1.0 CCHoverHorzButton.qml
+CCVertRect                      1.0 CCVertRect.qml
+
+#CCButton                       1.0 CCButton.qml
