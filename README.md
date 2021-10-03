@@ -12,6 +12,7 @@ Qml 学习代码
 关键控件： column、SpringAnimation、transitions、State
 
 博客地址：https://blog.csdn.net/qq_16504163/article/details/120459571
+
 ==========================================================================
 
 2021.08.02  [Android] [Windows]
