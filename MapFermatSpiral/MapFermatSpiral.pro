@@ -1,5 +1,12 @@
 QT += quick
 
+QT += \
+    location \        # 地图定位相关
+    positioning \     # 通过 QML 和 c++ 接口提供定位信息。
+
+QMAKE_CXXFLAGS += -execution-charset:utf-8  # 让程序执行时使用utf-8字符集
+QMAKE_CXXFLAGS += -source-charset:utf-8     # 告诉vc编译器识别源文件编码类型是utf-8
+
 CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
@@ -14,6 +21,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        fermatspiralpath.cpp \
         main.cpp
 
 RESOURCES += qml.qrc
@@ -28,3 +36,6 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+HEADERS += \
+    fermatspiralpath.h

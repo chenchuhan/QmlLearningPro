@@ -1,9 +1,10 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    CanvasBasic \
     CanvasSector \
     CrazyMath \
+    MapFermatSpiral \
+    MapGetdistance \
     MenuForButton \
     MenuForListview \
     MenuForRepeater \

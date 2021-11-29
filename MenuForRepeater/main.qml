@@ -24,7 +24,7 @@ Window {
         Text {
             id:                 mainPage
             anchors.centerIn:   parent
-            text:               "我是主页"
+            text:               qsTr("Is Main Page")
             font.pointSize:     30
             font.bold:          true
             visible:            (pageIndex != 0) ||  (pageIndex != 1) ||  (pageIndex != 2)

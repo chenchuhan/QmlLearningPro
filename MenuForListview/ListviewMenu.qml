@@ -49,7 +49,7 @@ Item {
                 }
                 Label {
                    id:                      innerTextHeader
-                   text:                    qsTr("目  录")
+                   text:                    qsTr("Menu")
                    color:                   "white"
                    font.pointSize:          parent.height * 0.6
                    font.bold:               true
