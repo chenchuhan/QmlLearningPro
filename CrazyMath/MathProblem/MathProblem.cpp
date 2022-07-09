@@ -1,8 +1,13 @@
 #pragma execution_character_set("utf-8")
 
+
+
 #include "MathProblem.h"
 #include <QDebug>
 #include <QDateTime>
+
+QGuiApplication* _app = nullptr;
+
 
 const char *MathProblem::_problems[] = {
     "1 + 2 = ", "2 + 3 = ", "2 + 2 = ",
@@ -36,6 +41,9 @@ MathProblem::MathProblem(QObject *parent)
     , _mathCount(60)
 {
     qsrand(QDateTime::currentDateTime().toTime_t());
+
+     _test = tr("isTestEnglish");
+     testChanged(_test);
 }
 
 MathProblem::~MathProblem() {

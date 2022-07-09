@@ -1,10 +1,14 @@
 #ifndef MATH_PROBLEM_H
 #define MATH_PROBLEM_H
 
+#include <QGuiApplication>
+
+
 #include <QObject>
 #include <QString>
 
 //using namespace::std;
+extern QGuiApplication* _app;
 
 class MathProblem : public QObject {
 
@@ -15,13 +19,17 @@ public:
     ~MathProblem();
 
     Q_PROPERTY(bool isRight     READ isRight   NOTIFY isRightChanged)
+    Q_PROPERTY(QString test     READ test   NOTIFY testChanged)
 
     bool isRight    ();
+    QString test() const  {return _test;}
 
     Q_INVOKABLE QString nextMath();  //Q_INVOKABLE
 
+
 signals:
     void isRightChanged         (bool isRight);
+    void testChanged            (QString test);
 
 private:
     int             newIdx;
@@ -30,6 +38,9 @@ private:
 
     static const char * _problems[];
     static const int    _answers[];
+    //start_cch_20220531
+
+    QString _test;
 };
 
 #endif

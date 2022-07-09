@@ -77,10 +77,10 @@ Window {
 
             Label {
                 id:                         radiusLabel
+                color:                      "#B7FF4A"
                 text:                       qsTr("输入半径：")
                 font.pointSize:             11
                 font.bold:                  true
-                color:                      "#B7FF4A"
             }
             TextField {
                 id:                         radiusTF

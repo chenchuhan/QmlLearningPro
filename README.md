@@ -1,6 +1,20 @@
 # QmlLearningPro
 Qml 学习代码
 
+
+==========================================================================
+
+2022.07.09 [Windows]
+ 
+概要： 介绍了 Qt 翻译流程，可利用 QT_TRANSLATE_NOOP 翻译 Map和函数外部的字符串
+
+关键词：QT_TRANSLATE_NOOP、QMap<uint32_t, QString>、QSringList
+
+关键控件： Label、Repeater
+
+博客地址：https://chuhan.blog.csdn.net/article/details/125686784
+
+
 ==========================================================================
 
 2022.03.12 [Windows]

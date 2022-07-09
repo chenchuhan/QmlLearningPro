@@ -58,6 +58,18 @@ void setCode(void) {
     #endif
 }
 
+static QObject *backendInterfaceProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+
+    return new MathProblem(/* need a QMediaPlayer* here*/);
+}
+
+
+//QGuiApplication* _app = nullptr;
+
+
 int main(int argc, char *argv[])
 {
 
@@ -69,10 +81,11 @@ int main(int argc, char *argv[])
     ///--设置公司网址，QSetting 就可以直接用了
     setOrganization();
 
-    QGuiApplication app(argc, argv);
+//    QGuiApplication app(argc, argv);
+    _app = new QGuiApplication(argc, argv);
 
     ///--设置翻译
-    setLanguage(&app);
+    setLanguage(_app);
 
     QQmlApplicationEngine engine;
 
@@ -80,7 +93,10 @@ int main(int argc, char *argv[])
     engine.addImportPath(QStringLiteral("qrc:/"));
 
     // C++ 和 QML 混合编程，方法一：
-    engine.rootContext()->setContextProperty("MathProblem", new MathProblem);
+    engine.rootContext()->setContextProperty("MathProblem", new MathProblem);  //[flag3]
+
+    qmlRegisterSingletonType<MathProblem>   ("CC.QML",     1, 0, "MathProblem",     backendInterfaceProvider);
+
 
     // C++ 和 QML  混合编程，方法二：
     qmlRegisterType<Values>       ("cc.Values",        1, 0, "Values");
@@ -88,14 +104,14 @@ int main(int argc, char *argv[])
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
+                     _app, [url](QObject *obj, const QUrl &objUrl) {
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
 
     engine.load(url);
 
-    return app.exec();
+    return _app->exec();
 }
 
 

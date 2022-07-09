@@ -3,7 +3,7 @@ import QtQuick.Controls         2.12
 
 Text {
     font.pointSize: 10
-    font.family:    "Microsoft Yahei"
+//    font.family:    "Microsoft Yahei"
     color:          "white"
     antialiasing:   true
     font.bold:      true

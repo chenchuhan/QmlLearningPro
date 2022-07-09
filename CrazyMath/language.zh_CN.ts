@@ -11,7 +11,7 @@
     <message>
         <location filename="../main.qml" line="78"/>
         <source>Start</source>
-        <translation>开始</translation>
+        <translation>开始111</translation>
     </message>
     <message>
         <location filename="../main.qml" line="156"/>
@@ -42,6 +42,50 @@
         <location filename="../main.qml" line="216"/>
         <source>Restart</source>
         <translation>重新开始</translation>
+    </message>
+</context>
+<context>
+    <name>InstrumentValue</name>
+    <message>
+        <location filename="../MathProblem/MathProblem.cpp" line="21"/>
+        <source>None</source>
+        <translation>无</translation>
+    </message>
+    <message>
+        <location filename="../MathProblem/MathProblem.cpp" line="21"/>
+        <source>Color</source>
+        <translation>颜色</translation>
+    </message>
+    <message>
+        <location filename="../MathProblem/MathProblem.cpp" line="21"/>
+        <source>Opacity</source>
+        <translation type="unfinished">透明度</translation>
+    </message>
+    <message>
+        <location filename="../MathProblem/MathProblem.cpp" line="21"/>
+        <source>Icon</source>
+        <translation type="unfinished">图标</translation>
+    </message>
+</context>
+<context>
+    <name>MathProblem</name>
+    <message>
+        <location filename="../MathProblem/MathProblem.cpp" line="50"/>
+        <source>isTestEnglish</source>
+        <translation>翻译测试</translation>
+    </message>
+</context>
+<context>
+    <name>FriendlyConversation</name>
+    <message>
+        <location filename="../MathProblem/MathProblem.cpp" line="50"/>
+        <source>Hello</source>
+        <translation>你好</translation>
+    </message>
+    <message>
+        <location filename="../MathProblem/MathProblem.cpp" line="50"/>
+        <source>Goodbye</source>
+        <translation>再见</translation>
     </message>
 </context>
 </TS>
