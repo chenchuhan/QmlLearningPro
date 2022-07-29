@@ -9,6 +9,7 @@ SUBDIRS += \
     MenuForListview \   #工具栏目录2        以上
     MenuForRepeater \   #工具栏目录3        以上
     MenuForTabBar \     #工具栏目录4        以上
+    NetTools \
     ParaProgressBar \   #平行四边形进度条    https://blog.csdn.net/qq_16504163/article/details/115030440
     Popup \
     TranslationsDemo \

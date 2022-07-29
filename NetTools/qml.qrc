@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+        <file alias="CC/Controls/CCButton1.qml">controls/CCButton1.qml</file>
+        <file alias="CC/Controls/qmldir">controls/Controls/qmldir</file>
+        <file alias="CC/Controls/CCLabel.qml">controls/CCLabel.qml</file>
+        <file alias="CC/Controls/CCColoredImage.qml">controls/CCColoredImage.qml</file>
+        <file alias="CC/Controls/CCGradientImage.qml">controls/CCGradientImage.qml</file>
+        <file alias="CC/Controls/CCTextField.qml">controls/CCTextField.qml</file>
+        <file alias="CC/Controls/CCMenuButton.qml">controls/CCMenuButton.qml</file>
+        <file alias="CC/Controls/CCRadioButton.qml">controls/CCRadioButton.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="CC/Disconnect.svg">images/Disconnect.svg</file>
+        <file alias="CC/Monitor.svg">images/Monitor.svg</file>
+        <file alias="CC/Send.svg">images/Send.svg</file>
+    </qresource>
+</RCC>
