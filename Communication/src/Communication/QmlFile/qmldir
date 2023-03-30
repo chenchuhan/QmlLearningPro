@@ -1,0 +1,8 @@
+Module Communication.QmlFile
+
+LinkSettings                1.0 LinkSettings.qml
+#BluetoothSettings          1.0 BluetoothSettings.qml
+#LinkSettings               1.0 LinkSettings.qml
+#SerialSettings             1.0 SerialSettings.qml
+#TcpSettings                1.0 TcpSettings.qml
+#UdpSettings                1.0 UdpSettings.qml

@@ -1,9 +1,0 @@
-Module CC.Controls
-
-CCButton1        1.0 CCButton1.qml
-CCColoredImage   1.0 CCColoredImage.qml
-CCGradientImage  1.0 CCGradientImage.qml
-CCLabel          1.0 CCLabel.qml
-CCTextField      1.0 CCTextField.qml
-CCMenuButton     1.0 CCMenuButton.qml
-CCRadioButton    1.0 CCRadioButton.qml

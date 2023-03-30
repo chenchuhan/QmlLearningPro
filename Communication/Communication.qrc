@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+        <file alias="Communication/QmlFile/BluetoothSettings.qml">src/Communication/QmlFile/BluetoothSettings.qml</file>
+        <file alias="Communication/QmlFile/LinkSettings.qml">src/Communication/QmlFile/LinkSettings.qml</file>
+        <file alias="Communication/QmlFile/qmldir">src/Communication/QmlFile/qmldir</file>
+        <file alias="Communication/QmlFile/SerialSettings.qml">src/Communication/QmlFile/SerialSettings.qml</file>
+        <file alias="Communication/QmlFile/TcpSettings.qml">src/Communication/QmlFile/TcpSettings.qml</file>
+        <file alias="Communication/QmlFile/UdpSettings.qml">src/Communication/QmlFile/UdpSettings.qml</file>
+        <file>src/QmlControls/QmlButton.qml</file>
+        <file>src/QmlControls/QmlButton2.qml</file>
+        <file>src/QmlControls/QmlButton4.qml</file>
+        <file>src/QmlControls/QmlButton5.qml</file>
+        <file>src/QmlControls/QmlButton11.qml</file>
+        <file>src/QmlControls/QmlCheckBox.qml</file>
+        <file alias="QmlControls/qmldir">src/QmlControls/qmldir</file>
+        <file>src/QmlControls/QmlGradientImage.qml</file>
+        <file>src/QmlControls/QmlHoverHoriButton.qml</file>
+        <file>src/QmlControls/QmlHoverVertButton.qml</file>
+        <file>src/QmlControls/QmlImageButton.qml</file>
+        <file>src/QmlControls/QmlInnerLabel.qml</file>
+        <file alias="QmlControls/QmlLabel.qml">src/QmlControls/QmlLabel.qml</file>
+        <file>src/QmlControls/QmlMenuButton.qml</file>
+        <file>src/QmlControls/QmlRadioButton.qml</file>
+        <file>src/QmlControls/QmlSliderSwitch.qml</file>
+        <file>src/QmlControls/QmlSpecialLabel.qml</file>
+        <file>src/QmlControls/QmlTextField.qml</file>
+        <file>src/QmlControls/QmlToolStrip.qml</file>
+        <file alias="QmlControls/QmlComboBox.qml">src/QmlControls/QmlComboBox.qml</file>
+        <file alias="QmlControls/ScreenTools.qml">src/QmlControls/ScreenTools.qml</file>
+        <file alias="QmlControls/QmlButton1.qml">src/QmlControls/QmlButton1.qml</file>
+        <file alias="QmlControls/QmlColoredImage.qml">src/QmlControls/QmlColoredImage.qml</file>
+    </qresource>
+</RCC>

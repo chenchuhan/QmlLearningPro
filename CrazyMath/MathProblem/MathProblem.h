@@ -3,7 +3,6 @@
 
 #include <QGuiApplication>
 
-
 #include <QObject>
 #include <QString>
 

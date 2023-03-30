@@ -1,0 +1,12 @@
+Module QmlControls
+
+QmlButton1        1.0 QmlButton1.qml
+QmlColoredImage   1.0 QmlColoredImage.qml
+QmlGradientImage  1.0 QmlGradientImage.qml
+QmlLabel          1.0 QmlLabel.qml
+QMLTextField      1.0 QmlTextField.qml
+QmlMenuButton     1.0 QmlMenuButton.qml
+QmlRadioButton    1.0 QmlRadioButton.qml
+QmlComboBox       1.0 QmlComboBox.qml
+singleton ScreenTools 1.0 ScreenTools.qml
+
