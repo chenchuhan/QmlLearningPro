@@ -53,6 +53,7 @@ void LinkManager::init(void)
 }
 
 // This should only be used by Qml code
+// connect
 void LinkManager::createConnectedLink(LinkConfiguration* config)
 {
     for(int i = 0; i < _rgLinkConfigs.count(); i++) {
@@ -62,6 +63,7 @@ void LinkManager::createConnectedLink(LinkConfiguration* config)
     }
 }
 
+///--创建 link
 bool LinkManager::createConnectedLink(SharedLinkConfigurationPtr& config)
 {
     SharedLinkInterfacePtr link = nullptr;
@@ -91,7 +93,8 @@ bool LinkManager::createConnectedLink(SharedLinkConfigurationPtr& config)
         _rgLinks.append(link);
         config->setLink(link);
 
-//        connect(link.get(), &LinkInterface::bytesReceived,       _mavlinkProtocol,    &MAVLinkProtocol::receiveBytes);
+        ///--最重要接口之一： 接收到数据通过信号槽连接到何处
+        connect(link.get(), &LinkInterface::bytesReceived,       _customer,    &MAVLinkProtocol::receiveBytes);
 //        connect(link.get(), &LinkInterface::bytesSent,           _mavlinkProtocol,    &MAVLinkProtocol::logSentBytes);
         connect(link.get(), &LinkInterface::disconnected,        this,                &LinkManager::_linkDisconnected);
 
@@ -335,6 +338,7 @@ bool LinkManager::endConfigurationEditing(LinkConfiguration* config, LinkConfigu
     return true;
 }
 
+//qml add 的时候调用过
 bool LinkManager::endCreateConfiguration(LinkConfiguration* config)
 {
     if (config) {

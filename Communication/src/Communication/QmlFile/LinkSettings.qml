@@ -145,6 +145,7 @@ Rectangle {
                         editConfig = LinkManager.createConfiguration(LinkConfiguration.TypeSerial, "Unnamed")
                     } else {
                         ///--默认UDP连接
+                        ///创建  LinkConfiguration
                         editConfig = LinkManager.createConfiguration(LinkConfiguration.TypeUdp,    "Unnamed")
                     }
                 }
@@ -359,7 +360,10 @@ Rectangle {
                     text:       qsTr("OK")
                     enabled:    nameField.text !== ""
                     onClicked: {
+                        //
+
                         // Save editting
+
                         linkSettingLoader.item.saveSettings()
                         editConfig.name = nameField.text
                         if(linkConfig) {

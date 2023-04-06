@@ -32,6 +32,8 @@ class UDPConfiguration;
 class AutoConnectSettings;
 class LogReplayLink;
 
+class Customer;
+
 /// @brief Manage communication links
 ///
 /// The Link Manager organizes the physical Links. It can manage arbitrary
@@ -125,6 +127,7 @@ private:
 
     AutoConnectSettings*                _autoConnectSettings = nullptr;
 //    MAVLinkProtocol*                    _mavlinkProtocol;
+    =
 
     QList<SharedLinkInterfacePtr>       _rgLinks;
     QList<SharedLinkConfigurationPtr>   _rgLinkConfigs;

@@ -82,6 +82,8 @@ public:
 
     static UserApplication*  _app;   ///< Our own singleton. Should be reference directly by qgcApp
 
+    LinkManager *GetLinkManager() { return  _linkManager; }
+
     void _shutdown();
 
 public:

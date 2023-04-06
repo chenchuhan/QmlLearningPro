@@ -35,9 +35,11 @@ INCLUDEPATH += \
     src/Communication/QmlFile \
     src/QmlGeneral \
     src/QmlControls \
-    core
+    core \
+    app
 
 SOURCES += \
+        app/Customer.cpp \
         core/UserApplication.cc \
         main.cpp \
         src/Communication/LinkConfiguration.cc \
@@ -69,6 +71,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    app/Customer.h \
     core/UserApplication.h \
     src/Communication/LinkConfiguration.h \
     src/Communication/LinkInterface.h \
