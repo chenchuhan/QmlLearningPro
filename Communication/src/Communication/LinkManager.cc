@@ -94,7 +94,7 @@ bool LinkManager::createConnectedLink(SharedLinkConfigurationPtr& config)
         config->setLink(link);
 
         ///--最重要接口之一： 接收到数据通过信号槽连接到何处
-        connect(link.get(), &LinkInterface::bytesReceived,       _customer,    &MAVLinkProtocol::receiveBytes);
+        connect(link.get(), &LinkInterface::bytesReceived,       _customer,    &Customer::receiveBytes);
 //        connect(link.get(), &LinkInterface::bytesSent,           _mavlinkProtocol,    &MAVLinkProtocol::logSentBytes);
         connect(link.get(), &LinkInterface::disconnected,        this,                &LinkManager::_linkDisconnected);
 

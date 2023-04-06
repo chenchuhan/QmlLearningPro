@@ -39,7 +39,7 @@ INCLUDEPATH += \
     app
 
 SOURCES += \
-        app/Customer.cpp \
+        app/CustomerProtocol.cpp \
         core/UserApplication.cc \
         main.cpp \
         src/Communication/LinkConfiguration.cc \
@@ -71,7 +71,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    app/Customer.h \
+    app/CustomerProtocol.h \
     core/UserApplication.h \
     src/Communication/LinkConfiguration.h \
     src/Communication/LinkInterface.h \
