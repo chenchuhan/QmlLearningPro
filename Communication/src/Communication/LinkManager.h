@@ -17,6 +17,9 @@
 
 #include "LinkConfiguration.h"
 #include "LinkInterface.h"
+#include "MultiCustomManager.h"
+
+
 //#include "QGCToolbox.h"
 //#include "MAVLinkProtocol.h"
 #if !defined(__mobile__)
@@ -32,7 +35,8 @@ class UDPConfiguration;
 class AutoConnectSettings;
 class LogReplayLink;
 
-class Customer;
+class CustomerProtocol;
+//class MultiCustomManager;
 
 /// @brief Manage communication links
 ///
@@ -103,10 +107,15 @@ public:
 
     void init(void);
 
+    //start_cch_20230409
+
+
 
 signals:
     void commPortStringsChanged();
     void commPortsChanged();
+    void createCustomer      (LinkInterface* link);
+
 
 private slots:
     void _linkDisconnected  (void);
@@ -127,7 +136,7 @@ private:
 
     AutoConnectSettings*                _autoConnectSettings = nullptr;
 //    MAVLinkProtocol*                    _mavlinkProtocol;
-    =
+    CustomerProtocol*                     _customerProtocol;
 
     QList<SharedLinkInterfacePtr>       _rgLinks;
     QList<SharedLinkConfigurationPtr>   _rgLinkConfigs;

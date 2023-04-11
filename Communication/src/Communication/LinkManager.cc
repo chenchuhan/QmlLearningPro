@@ -15,7 +15,7 @@
 #include <memory>
 
 #include "LinkManager.h"
-//#include "QGCApplication.h"
+#include "UserApplication.h"
 #include "UDPLink.h"
 #include "TCPLink.h"
 #include <QQmlApplicationEngine>
@@ -36,6 +36,10 @@ LinkManager::LinkManager()
 //    qmlRegisterUncreatableType<LinkManager>         ("QGroundControl", 1, 0, "LinkManager",         "Reference only");
     qmlRegisterUncreatableType<LinkConfiguration>   ("Comm", 1, 0, "LinkConfiguration",   "Reference only");
     qmlRegisterUncreatableType<LinkInterface>       ("QGroundControl", 1, 0, "LinkInterface",       "Reference only");
+
+    //手动建立连接
+    MultiCustomManager _multiCustomManager = userApp()->MultiCustomManager();
+    connect(this, &LinkManager::createCustomer,   _multiCustomManager,  &MultiCustomManager::CreateCustomer);
 }
 
 LinkManager::~LinkManager()
@@ -94,12 +98,11 @@ bool LinkManager::createConnectedLink(SharedLinkConfigurationPtr& config)
         config->setLink(link);
 
         ///--最重要接口之一： 接收到数据通过信号槽连接到何处
-        connect(link.get(), &LinkInterface::bytesReceived,       _customer,    &Customer::receiveBytes);
-//        connect(link.get(), &LinkInterface::bytesSent,           _mavlinkProtocol,    &MAVLinkProtocol::logSentBytes);
+//        connect(link.get(), &LinkInterface::bytesReceived,       _customerProtocol,    &CustomerProtocol::receiveBytes);
         connect(link.get(), &LinkInterface::disconnected,        this,                &LinkManager::_linkDisconnected);
 
-//        _mavlinkProtocol->resetMetadataForLink(link.get());
-//        _mavlinkProtocol->setVersion(_mavlinkProtocol->getCurrentVersion());
+        //--点击连接后，建立用户端的连接
+        emit createCustomer(link.get());
 
         if (!link->_connect()) {
             return false;
@@ -156,6 +159,8 @@ void LinkManager::_linkDisconnected(void)
     }
 }
 
+/// 接收到数据的时候触发，_rgLinks为connect时候append
+/// link 为接收数据的时候做参数传入
 SharedLinkInterfacePtr LinkManager::sharedLinkInterfacePointerForLink(LinkInterface* link, bool ignoreNull)
 {
     for (int i=0; i<_rgLinks.count(); i++) {
