@@ -107,10 +107,6 @@ public:
 
     void init(void);
 
-    //start_cch_20230409
-
-
-
 signals:
     void commPortStringsChanged();
     void commPortsChanged();
@@ -135,8 +131,6 @@ private:
     QTimer                              _portListTimer;
 
     AutoConnectSettings*                _autoConnectSettings = nullptr;
-//    MAVLinkProtocol*                    _mavlinkProtocol;
-    CustomerProtocol*                     _customerProtocol;
 
     QList<SharedLinkInterfacePtr>       _rgLinks;
     QList<SharedLinkConfigurationPtr>   _rgLinkConfigs;
@@ -152,5 +146,6 @@ private:
     static const int    _autoconnectUpdateTimerMSecs;
     static const int    _autoconnectConnectDelayMSecs;
 
+    MultiCustomManager*                 _multiCustomManager;
 };
 

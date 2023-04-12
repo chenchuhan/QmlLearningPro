@@ -38,8 +38,8 @@ LinkManager::LinkManager()
     qmlRegisterUncreatableType<LinkInterface>       ("QGroundControl", 1, 0, "LinkInterface",       "Reference only");
 
     //手动建立连接
-//    _multiCustomManager = userApp()->GetMultiCustomManager();
-//    connect(this, &LinkManager::createCustomer,   _multiCustomManager,  &MultiCustomManager::CreateCustomer);
+    _multiCustomManager = userApp()->GetMultiCustomManager();
+    connect(this, &LinkManager::createCustomer,   _multiCustomManager,  &MultiCustomManager::CreateCustomer);
 }
 
 LinkManager::~LinkManager()
