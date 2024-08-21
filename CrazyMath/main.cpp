@@ -9,6 +9,10 @@
 #include <QTranslator>
 #include <QDebug>
 
+#include <string>
+#include <iostream>
+#include <locale.h> // for setlocale() function
+#include <codecvt> // for std::wstring_convert<> class template
 
 ///--指定了名字，公司等，就不需要手动创建.ini配置文件了, 会自动创建ini文件
 void setOrganization(void) {
@@ -17,6 +21,31 @@ void setOrganization(void) {
     QCoreApplication::setOrganizationDomain("CrazyMath.com");
     QCoreApplication::setApplicationName("CrazyMath");
 }
+
+
+//bool check(unsigned char c){
+
+//    return c >= 0xE0;
+//}
+
+
+
+//bool ChineseTest2(void) {
+
+//    const char* utf8String = "你好世界";
+
+//    // Set the locale to UTF-8 encoding (for conversion)
+//    setlocale(LC_ALL, ".UTF-8");
+
+//    // Convert from UTF-8 string to wide character string using codecvt facet
+//    typedef std::codecvt<char32_t, wchar_t, std::mbstate_t> Codec;
+//    std::wstring_convert<Codec> converter;
+//    std::wstring wideStr = converter.from_bytes(utf8String);
+
+//    // Print the converted wide character string
+//    std::wcout << wideStr << std::endl;
+//    return 1;
+//}
 
 ///--翻译
 void setLanguage(QGuiApplication *app) {
@@ -66,10 +95,6 @@ static QObject *backendInterfaceProvider(QQmlEngine *engine, QJSEngine *scriptEn
     return new MathProblem(/* need a QMediaPlayer* here*/);
 }
 
-
-//QGuiApplication* _app = nullptr;
-
-
 int main(int argc, char *argv[])
 {
 
@@ -80,6 +105,7 @@ int main(int argc, char *argv[])
 
     ///--设置公司网址，QSetting 就可以直接用了
     setOrganization();
+
 
 //    QGuiApplication app(argc, argv);
     _app = new QGuiApplication(argc, argv);

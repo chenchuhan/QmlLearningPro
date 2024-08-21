@@ -18,6 +18,7 @@
 #include <QMetaObject>
 
 #include "LinkManager.h"
+#include "MultiCustomManager.h"
 
 
 // These private headers are require to implement the signal compress support below
@@ -84,6 +85,8 @@ public:
 
     LinkManager *GetLinkManager() { return  _linkManager; }
 
+    MultiCustomManager *GetMultiCustomManager() { return  _multiCustomManager; }
+
     void _shutdown();
 
 public:
@@ -92,10 +95,11 @@ public:
 private slots:
 
 private:
+    QQmlApplicationEngine*  _qmlAppEngine        = nullptr;
+    LinkManager*            _linkManager = nullptr;
+    MultiCustomManager*     _multiCustomManager = nullptr;
 
-    QQmlApplicationEngine* _qmlAppEngine        = nullptr;
-    LinkManager* _linkManager = nullptr;
 };
 
 /// @brief Returns the UserApplication object singleton.
-UserApplication* qgcApp(void);
+UserApplication* userApp(void);

@@ -89,9 +89,14 @@ QQmlApplicationEngine* UserApplication::createQmlApplicationEngine(QObject* pare
     QQmlApplicationEngine* qmlEngine = new QQmlApplicationEngine(parent);
     qmlEngine->addImportPath("qrc:/qml");
 
+    //LinkManager
     _linkManager = new LinkManager();
+    qmlEngine->rootContext()->setContextProperty("LinkManager", _linkManager);
 
-    qmlEngine->rootContext()->setContextProperty("LinkManager", _linkManager);  //[flag3]
+    //MultiCustomManager
+    _multiCustomManager = new MultiCustomManager();
+    qmlEngine->rootContext()->setContextProperty("MultiCustomManager", _multiCustomManager);
+
 
     return qmlEngine;
 }
@@ -116,7 +121,7 @@ bool UserApplication::_initForNormalAppBoot()
 }
 
 /// @brief Returns the UserApplication object singleton.
-UserApplication*qgcApp(void)
+UserApplication*userApp(void)
 {
     return UserApplication::_app;
 }
