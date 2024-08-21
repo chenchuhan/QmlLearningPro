@@ -2,9 +2,106 @@
 Qml 学习代码
 
 
-==========================================================================
+# 项目列表
 
-**创建日期**：2022.07.09 [Windows]
+## 1、综合相关
+
+### 1.CrazyMath.pro [Android] [Windows]
+
+**创建日期**：2021.10.03 ； **20240821测试**：  正常 
+ 
+概要： 算术小游戏，主要熟悉QML和C++的混合编程、和翻译等
+
+关键控件/库： column、SpringAnimation、transitions、State、QSetting
+
+博客地址：https://blog.csdn.net/qq_16504163/article/details/120459571
+
+![1-001](ReadmeQrc/1-001.gif)
+
+---
+
+## 2、控件相关
+
+### 1. ParaProgressBar.pro   [Android] [Windows]
+
+**创建日期**： 2022/08/21； **20240821测试**：正常 
+
+由15个平行四边形组成的进度条
+
+博客地址：https://blog.csdn.net/qq_16504163/article/details/115030440
+
+![2-001](ReadmeQrc/2-001.gif)
+
+---
+
+### 2. CanvasSector.pro [Android] [Windows]
+
+**创建日期**：20210518； **20240821测试**：正常 
+
+CanvasSector 基于Canvas的扇形进度条
+
+博客地址：https://blog.csdn.net/qq_16504163/article/details/116952399
+
+![2-002](ReadmeQrc/2-002.gif)
+
+---
+
+### 3.MenuForButton.pro [Android] [Windows]
+
+**创建日期**：20210518； **20240821测试**：正常 
+
+MenuForButton 基于Button的目录
+
+MenuForListview 基于Listview目录
+
+MenuForRepeater 基于Repeater目录
+
+MenuForTabBar 基于TabBar的目录
+
+博客地址： https://blog.csdn.net/qq_16504163/article/details/109555984
+
+![2-003-1](ReadmeQrc/2-003-1.gif)
+![2-003-2](ReadmeQrc/2-003-2.gif)
+![2-003-3](ReadmeQrc/2-003-3.gif)
+![2-003-4](ReadmeQrc/2-003-4.gif)
+![2-003-5](ReadmeQrc/2-003-5.gif)
+![2-003-6](ReadmeQrc/2-003-6.gif)
+
+---
+
+### 4. Popup.pro [Android] [Windows]
+
+**创建日期**：2022.03.12 **20240821测试**：正常
+
+概要： 在 QML 文件中，不论子文件有多少层，只需在根节点文件中添加 Popup 组件，都可以在界面中弹出置顶
+
+关键控件： popup、Component、mapFromItem
+
+博客地址：https://chuhan.blog.csdn.net/article/details/123439512
+
+![2-004](ReadmeQrc/2-004.gif)
+
+---
+
+### 5.VirtualJoystick  [Android] [Windows]
+
+**创建日期**：2021.08.02 ； **20240821测试**：正常
+ 
+概要： VirtualJoystick  增加虚拟操作杆，捕获触点，在控制物体移动。
+
+关键控件： MultiPointTouchArea、TouchPoint、Timer
+
+博客地址：https://blog.csdn.net/qq_16504163/article/details/119318325
+
+![2-005](ReadmeQrc/2-005.gif)
+
+---
+
+## 3、工具相关
+
+### 1. TranslationsDemo.pro [Android] [Windows]
+
+**创建日期**：2022.07.09 ； **20240821测试**：正常
  
 概要： 介绍了 Qt 翻译流程，可利用 QT_TRANSLATE_NOOP 翻译 Map和函数外部的字符串
 
@@ -14,26 +111,16 @@ Qml 学习代码
 
 博客地址：https://chuhan.blog.csdn.net/article/details/125686784
 
+---
 
-==========================================================================
 
-**创建日期**：2022.03.12 [Windows]
- 
-概要： 在 QML 文件中，不论子文件有多少层，只需在根节点文件中添加 Popup 组件，都可以在界面中弹出置顶
+## 4、UI相关
 
-关键词：popup、mapFromItem
+## 5、地图类
 
-关键控件： popup、Component
+### 1. MapFermatSpiral.pro  [Android] [Windows]
 
-博客地址：https://chuhan.blog.csdn.net/article/details/123439512
-
-==========================================================================
-
-## MapFermatSpiral
-
-**创建日期**：创建日期：20211129  [Windows]
-
-20240821测试： WIndows 正常 | Android 正常
+**创建日期**：20211129；  **20240821测试**： 正常
  
 概要： 在地图中画螺旋曲线
 
@@ -43,70 +130,20 @@ Qml 学习代码
 
 博客地址：https://chuhan.blog.csdn.net/article/details/121621392
 
+![5-001](ReadmeQrc/5-001.gif)
 
-![螺旋曲线](ReadmeQrc/e85ca36db0bd3b7f290d6ddf5652231e.gif)
+---
 
-==========================================================================
+### 2. MapGetdistance [Android] [Windows]
 
-**创建日期**: 2021.11.29  [Windows]
- 
+**创建日期**: 2021.11.29； **20240821测试**：正常
+
 概要：在地图中测距
-
-关键词：MapGetdistance 
 
 关键控件： Map
 
 博客地址：https://blog.csdn.net/qq_16504163/article/details/109379164
 
-## CrazyMath
+---
 
-**创建日期**：2021.10.03  [Android] [Windows]
-
-**20240821测试**： WIndows 正常 | Android 正常
- 
-概要： 算术小游戏，主要熟悉QML和C++的混合编程、和翻译等
-
-关键词：CrazyMath、疯狂数字游戏、QML C++混合编程、翻译、QSetting 
-
-关键控件： column、SpringAnimation、transitions、State
-
-博客地址：https://blog.csdn.net/qq_16504163/article/details/120459571
-
-==========================================================================
-
-**创建日期**：2021.08.02  [Android] [Windows]
- 
-概要： VirtualJoystick  增加虚拟操作杆，捕获触点，在控制物体移动。
-
-关键控件： MultiPointTouchArea、TouchPoint、Timer
-
-博客地址：https://blog.csdn.net/qq_16504163/article/details/119318325
-
-==========================================================================
-
-ParaProgressBar  由15个平行四边形组成的进度条
-
-**创建日期**：
-
-博客地址：https://blog.csdn.net/qq_16504163/article/details/115030440
-
-==========================================================================
-
-MenuForButton 基于Button的目录
-MenuForListview 基于Listview目录
-MenuForRepeater 基于Repeater目录
-MenuForTabBar 基于TabBar的目录
-
-博客地址： https://blog.csdn.net/qq_16504163/article/details/109555984
-
-## CanvasSector.pro
-
-**创建日期**：20210518
-
-**20240821测试**：Windows 正常 | Android 正常
-
-CanvasSector 基于Canvas的扇形进度条
-
-博客地址：https://blog.csdn.net/qq_16504163/article/details/116952399
-
-==========================================================================
+## 六、视频类

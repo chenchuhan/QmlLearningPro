@@ -1,10 +1,7 @@
 TEMPLATE = subdirs
 
 
-# 20240820测试
-# CanvasSector       | Windows 正常 | Android 正常
-# CrazyMath          | WIndows 正常 | Android 正常
-# VirtualJoystick    | WIndows 正常 | Android 正常
+# 20240820测试 20240820前创建的工程文件Android与 Windows均正常，具体见Readme
 
 SUBDIRS += \
     CanvasSector \      #扇形画布           https://blog.csdn.net/qq_16504163/article/details/116952399
