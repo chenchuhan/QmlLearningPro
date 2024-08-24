@@ -42,7 +42,7 @@ Qml 学习代码
 
 博客地址：https://blog.csdn.net/qq_16504163/article/details/115030440
 
-![2-001](ReadmeQrc/1-002-1.gif）
+![2-001](ReadmeQrc/2-001.gif)
 
 ---
 
