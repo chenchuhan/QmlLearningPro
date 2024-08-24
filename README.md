@@ -97,6 +97,18 @@ MenuForTabBar 基于TabBar的目录
 
 ---
 
+### 6. TableView  [Windows]
+
+**创建日期**：20240824； [Android] 未测试
+ 
+概要： 在Qt中，如使用 QML 的 TableView 并且想要将数据与C++类进行绑定，通常会继承 QAbstractTableModel 来实现自定义的数据模型
+
+博客地址：[QT Quick QML 实例之定制 TableView](https://blog.csdn.net/qq_16504163/article/details/141499450)
+
+![2-006](ReadmeQrc/2-006.gif)
+
+---
+
 ## 3、工具相关
 
 ### 1. TranslationsDemo.pro [Android] [Windows]
