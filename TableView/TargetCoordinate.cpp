@@ -46,8 +46,6 @@ int TargetCoordinate::insertRowsCoor(int row, int count) {
         m_coordinates.insert(row, getCoor());
     }
 
-
-
     endInsertRows();
 
     return row;       // 返回插入的行的索引
@@ -97,11 +95,8 @@ QAbstractItemModel *TargetCoordinate::model()
 //为每个角色提供一个名称，主要用于 QML 绑定。
 QHash<int, QByteArray> TargetCoordinate::roleNames() const
 {
-//    qDebug() << "enter roleNames" ;
-
     QHash<int, QByteArray> roles;
 
-//    roles.insert(numRole,  "seq");
     roles.insert(lngRole,  "lng");
     roles.insert(latRole,  "lat");
     roles.insert(altRole,  "alt");

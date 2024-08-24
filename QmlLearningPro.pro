@@ -6,6 +6,7 @@ TEMPLATE = subdirs
 SUBDIRS += \
     CanvasSector \      #扇形画布           https://blog.csdn.net/qq_16504163/article/details/116952399
     CrazyMath \
+    NetTools \
     TableView \
     \         # CrazyMath #疯狂数字游戏        https://blog.csdn.net/qq_16504163/article/details/120459571
     MapFermatSpiral \   #地图中螺旋曲线      https://chuhan.blog.csdn.net/article/details/121621392

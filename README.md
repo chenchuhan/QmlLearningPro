@@ -20,6 +20,18 @@ Qml 学习代码
 
 ---
 
+### 2. Nettools.pro  [Windows]
+
+**创建日期**：20240825 ； 
+ 
+概要： 自建一个网络调试助手，暂时只添加 tcp 客户端工程
+
+博客地址：[QT Quick QML 网络助手——TCP客户端](https://blog.csdn.net/qq_16504163/article/details/141507680)
+
+![1-002-1](ReadmeQrc/1-002-1.gif) 
+
+---
+
 ## 2、控件相关
 
 ### 1. ParaProgressBar.pro   [Android] [Windows]
@@ -30,7 +42,7 @@ Qml 学习代码
 
 博客地址：https://blog.csdn.net/qq_16504163/article/details/115030440
 
-![2-001](ReadmeQrc/2-001.gif)
+![2-001](ReadmeQrc/1-002-1.gif）
 
 ---
 
