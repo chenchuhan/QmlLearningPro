@@ -158,7 +158,7 @@ bool TCPClient::connect(QString ip,  int port)
     QObject::connect(_tcpSocket, static_cast<void (QTcpSocket::*)(QAbstractSocket::SocketError)>(&QTcpSocket::error),
                      this, &TCPClient::_socketError);  //连接错误发送提示
 #else
-    QObject::connect(_tcpSocket, &QAbstractSocket::errorOccurred, this, &TCPLink::_socketError);
+    // QObject::connect(_tcpSocket, &QAbstractSocket::errorOccurred, this, &TCPLink::_socketError);
 #endif
 
     _tcpServerIP = ip;

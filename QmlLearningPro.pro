@@ -1,14 +1,12 @@
 TEMPLATE = subdirs
 
-
 # 20240820测试 20240820前创建的工程文件Android与 Windows均正常，具体见Readme
 
 SUBDIRS += \
     CanvasSector \      #扇形画布           https://blog.csdn.net/qq_16504163/article/details/116952399
-    CrazyMath \
+    CrazyMath \         #疯狂数字游戏        https://blog.csdn.net/qq_16504163/article/details/120459571
     NetTools \
     TableView \
-    \         # CrazyMath #疯狂数字游戏        https://blog.csdn.net/qq_16504163/article/details/120459571
     MapFermatSpiral \   #地图中螺旋曲线      https://chuhan.blog.csdn.net/article/details/121621392
     MapGetdistance \    #地图中测距         https://blog.csdn.net/qq_16504163/article/details/109379164
     MenuForButton \     #工具栏目录1        https://blog.csdn.net/qq_16504163/article/details/109555984
@@ -18,4 +16,5 @@ SUBDIRS += \
     ParaProgressBar \   #平行四边形进度条    https://blog.csdn.net/qq_16504163/article/details/115030440
     Popup \
     TranslationsDemo \
-    VirtualJoystick     #虚拟操作杆         https://blog.csdn.net/qq_16504163/article/details/119318325
+    VirtualJoystick \ \     #虚拟操作杆         https://blog.csdn.net/qq_16504163/article/details/119318325
+    WordExportQml/qWord.pro

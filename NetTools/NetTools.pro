@@ -5,6 +5,11 @@ QT += quick \
 
 CONFIG += c++11
 
+
+QMAKE_CXXFLAGS += -execution-charset:utf-8  # 让程序执行时使用utf-8字符集
+QMAKE_CXXFLAGS += -source-charset:utf-8     # 告诉vc编译器识别源文件编码类型是utf-8
+
+
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
 # depend on your compiler). Refer to the documentation for the
